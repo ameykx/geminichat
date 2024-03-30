@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify
 import vertexai
 from vertexai.preview.generative_models import GenerativeModel, ChatSession
 import os
-import google.cloud.logging
 
 app = Flask(__name__)
 PROJECT_ID = os.environ.get('GCP_PROJECT') #Your Google Cloud Project ID
